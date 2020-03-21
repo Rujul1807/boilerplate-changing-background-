@@ -1,0 +1,10 @@
+function setup() { 
+  createCanvas(400, 600); 
+} 
+function draw() {
+  r= map(mouseY,0,600,0,200); 
+  g = map(mouseY,0,600,200,400); 
+  b = map(mouseY,0,600,400,600); 
+  background(r,g,b);
+  ellipse(200,mouseY,30,30);
+}
